@@ -1,0 +1,21 @@
+{
+  "name": "esb24",
+  "private": true,
+  "scripts": {
+    "build": "slidev build --base /esb24/",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.42.5",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "@katzumi/slidev-addon-qrcode": "latest",
+    "slidev-addon-asciinema": "latest"
+  },
+  "devDependencies": {
+    "@iconify-json/uim": "^1.1.5",
+    "@iconify-json/mdi": "^1.1.50",
+    "@iconify-json/twemoji": "^1.1.11"
+  }
+}
