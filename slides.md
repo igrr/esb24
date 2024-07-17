@@ -421,10 +421,29 @@ class: text-left
 
 # Filesystem generators
 
+<v-clicks>
+
+- SPIFFS, FAT and LittleFS partitions can be generated during build process
+
+  ```cmake
+  fatfs_create_spiflash_image(storage-partition data-dir FLASH_IN_PROJECT)
+  ```
+  - `storage-partition` is defined in the partition table
+  - `data-dir` subdirectory contains files to package
+- `idf.py flash` will automatically flash the partition to the chip
+- Can be used at production time for certificates, embedded websites, graphical assets
+
+</v-clicks>
+
 ---
 
-# NVS Generation and mfg-tool
+# NVS tools
 
+- NVS generator: generate an NVS partition from CSV file of key-value pairs
+- NVS parse: analyze the contents of an NVS partition
+- Manufacturing tool: generate a set of NVS partitions based on CSV data file
+
+<img src="/mfg-tool.png" class="w-150 rounded shadow" />
 
 ---
 
